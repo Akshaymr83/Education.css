@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <style>
+
+    ul li {
+        list-style-type: none;
+    }
+
+    .navbar-nav .nav-link {
+        color: black;
+    }
+
+    #eduhome {
+        color: black;
+    }
+
+    #button1 {
+        background-color: rgb(213, 255, 255);
+    }
+
+    .section1 .card h1,
+    p,
+    a,
+    a {
+        color: white;
+    }
+
+    .card-title {
+        color: white;
+    }
+
+    /* Add this rule to remove margin for div elements in section1 */
+    .section1 div {
+        margin: 0;
+    }
+    .section2{
+        height: 60vh;
+    }
+    .section2 .container{
+        margin-right: 48px;
+    }
+    .section3 {
+  background-image: url(./eduimg/background.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 130vh;
+}
+
+.section3::before {
+  content: "";
+  background: rgba(0, 0, 0,0.6); /* Adjust the opacity (0.8) as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Place it behind the content */
+}
+
+    .section3 .card {
+        height: 100px;
+        width: 100px;
+        border-radius: 6px;
+    }
+    .section3 .container ,h1,p{
+        position: relative;
+        z-index: 2;
+    }
+    .section3 .container img {
+        height: 168px;
+        border-radius: 5px;
+        opacity: 0.6;
+    }
+    .section3 .container img:hover{
+        opacity: 1.0;
+    }
+    .section4 .card ,h1 ,p, a{
+        color: black;
+    }
+    .section4 .hatimage{
+        height: 15px;
+        width: 15px;
+    }
+    .section5{
+        background-image: url(./eduimg/bg3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80vh;
+   
+    }
+   
+    .section5 .card ,h1 ,p, a{
+        color: rgb(255, 255, 255);
+    }
+    .section6 .footer {
+      background-color: #ffffff;
+      color: #111111;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .section6 .footer div {
+      display: flex;
+      margin: 0 20px;
+    }
+
+      .footer h2, a,p{
+        color: black;
+      }
+
+      /* @media screen and  (min-width:750px){
+        
+      } */
+</style>
+
+
+
+</head>
+<body>
+    <nav class="navbar navbar-brand-expand-sm bg-white sticky-top ">
+        <div style="display: flex; justify-content: space-evenly;
+        align-content: space-between;
+        margin-right: 646px;">
+            <a href="#" class="navbar-brand"><img src="./eduimg/hat.jpg" alt="" style="width: 50px;"></a> 
+            <a href="#" class="navbar-brand"><h2 id="eduhome">EDUHOME</h2></a>
+        </div>
+    
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a  class="nav-link dropdown-toggle" href="#"  id="navbardrop" data-toggle="dropdown">Login</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Student</a>
+                    <a href="#" class="dropdown-item">Teacher</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-iten dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Courses</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">MBA</a>
+                    <a href="#" class="dropdown-item">MCA</a>
+                    <a href="#" class="dropdown-item">CA</a>
+                    <a href="#" class="dropdown-item">MBBS</a>
+                </div>
+            </li>
+            
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+               <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="background-color: rgb(229, 255, 246); border: 1px solid black; padding: 3px 4px 3px 4px; border-radius: 3px;">
+                   Register
+                </a>
+                
+            </li>
+        </ul>
+    </nav>
+    <section class="section1">
+        <div class="row">
+            <div class="col" style=" background-color: rgb(0, 109, 172); height: 500px; width: 100%;">
+                <div class="card-group" style="margin-top: 100px;" >
+                    <div class="card-body">
+                        <h1 class="card-tittle" style="color: white;">Innovation and <br>Discovery</h1>
+                    <p class="card-text" style="color: white;">Discovery is driven by curiosity and sustained through knowledge growth. Innovation: Innovation is discovery and creativity transformed into processes, outcomes and solutions.</p>
+                    <a href="#" class=" btn btn-primary">See now</a>
+                    <a href="" class="btn btn-light ">Register Now</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col" style="height: 500px; width: 100%;">
+                <div style="height: 500px; width: 100%;"><img src="./eduimg/student.avif" alt="student" style="width: 100%; height: 100%;"></div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section class="section2">
+        <h1 style="text-align: center; color:black">Statistics</h1>
+         <br><br>
+         <p style="text-align: center; color: black;">the practice or science of collecting and analysing numerical data in large quantities, especially for the purpose of inferring proportions</p>
+        <br><br>
+        <div class="container">
+            <div class="card-deck" style="width: 900px; height: 70px;" >
+                <div class="card">
+                <div class="card-tittle text-center" style="border: 1px solid black; padding-bottom: 13px; padding-top: 13px; border-radius: 150px; width: 80px; margin-left: 50px; margin-top: 10px;"><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg></div>
+                 <h2 class="card-body text-center" style="font-family:'Noto Sans Kawi', sans-serif;
+                 font-family: 'Playfair Display', serif ; font-weight: 800; color: rgb(0, 132, 255);" >356</h2>
+                <p style="color: black; text-align: center;">Result</p>
+            </div>
+
+            <div class="card">
+                <div class="card-tittle text-center" style="border: 1px solid black; padding-bottom: 13px; padding-top: 13px; border-radius: 150px; width: 80px; margin-left: 50px; margin-top: 10px;"><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg></div>
+                 <h2 class="card-body text-center" style="font-family:'Noto Sans Kawi', sans-serif;
+                 font-family: 'Playfair Display', serif ; font-weight: 800; color: rgb(0, 132, 255);" >356</h2>
+                <p style="color: black; text-align: center;">Result</p>
+            </div>
+
+            <div class="card">
+                <div class="card-tittle text-center" style="border: 1px solid black; padding-bottom: 13px; padding-top: 13px; border-radius: 150px; width: 80px; margin-left: 50px; margin-top: 10px;"><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></div>
+                 <h2 class="card-body text-center" style="font-family:'Noto Sans Kawi', sans-serif;
+                 font-family: 'Playfair Display', serif ; font-weight: 800; color: rgb(0, 132, 255);" >356</h2>
+                <p style="color: black; text-align: center;">Result</p>
+            </div>
+
+            <div class="card">
+                <div class="card-tittle text-center" style="border: 1px solid black; padding-bottom: 13px; padding-top: 13px; border-radius: 150px; width: 80px; margin-left: 50px; margin-top: 10px;"><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/></svg></div>
+                 <h2 class="card-body text-center" style="font-family:'Noto Sans Kawi', sans-serif;
+                 font-family: 'Playfair Display', serif ; font-weight: 800; color: rgb(0, 132, 255);" >356</h2>
+                <p style="color: black; text-align: center;">Result</p>
+            </div>
+           
+                
+            </div>
+        </div>
+
+        
+    </section>
+
+    <section class="section3">
+     <br><br>
+     <h1 style="text-align: center; color: white;">Featured Programes</h1>
+     <br><br><br>
+     <p style="text-align: center; color: white;" >Here are the few featured programes.check it out and Do parcticipate</p>
+     <br><br>
+     <div class="container">
+
+        
+            <div class="card-deck">
+                <div class="card" style="height: 250px; width: 200px;">
+              <img src="./eduimg/student.avif" alt="" class="card-img-top">
+                <div class="card-footer text-center">Library</div>
+            </div>
+
+         
+                <div class="card" style="height: 250px; width: 200px;">
+              <img src="./eduimg/std1.avif" alt="" class="card-img-top">
+                <div class="card-footer text-center">Alumini</div>
+            </div>
+
+         
+                <div class="card" style="height: 250px; width: 200px;">
+              <img src="./eduimg/std2.avif" alt="" class="card-img-top">
+                <div class="card-footer text-center">Campus</div>
+            </div>
+
+           
+                <div class="card" style="height: 250px; width: 200px;">
+              <img src="./eduimg/img3.jpeg" alt="" class="card-img-top">
+                <div class="card-footer text-center">Courses</div>
+            </div>
+           
+        </div>
+
+           
+        <br>
+        <div class="card-deck">
+            <div class="card" style="height: 250px; width: 200px;">
+          <img src="./eduimg/img4.avif" alt="" class="card-img-top">
+            <div class="card-footer text-center">Fees</div>
+        </div>
+
+     
+            <div class="card" style="height: 250px; width: 200px;">
+          <img src="./eduimg/std4.avif" alt="" class="card-img-top">
+            <div class="card-footer text-center">Hostel</div>
+        </div>
+
+     
+            <div class="card" style="height: 250px; width: 200px;">
+          <img src="./eduimg/std3.avif" alt="" class="card-img-top">
+            <div class="card-footer text-center">Certificates</div>
+        </div>
+
+       
+            <div class="card" style="height: 250px; width: 200px;">
+          <img src="./eduimg/img7.avif" alt="" class="card-img-top">
+            <div class="card-footer text-center"  >Graduation</div>
+        </div>
+       
+    </div>
+        
+        
+    </section>
+    <br><br>
+
+    <section class="section4">
+        <div class="container" style="display: flex; align-items: center;">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title" style="color: black;">A Few Words <br> About the University</h1><br>
+                    <p class="card-text" style="color: black;">A university (from Latin universitas 'a whole') is an institution of higher (or tertiary) educationand research which awards academic degrees in several academic disciplines. Universities typically 
+                        offer both undergraduate and postgraduate programs.</p>
+                   <button type="button" style="padding: 10px 20px 10px 20px; background-color: transparent; border: 1px solid black; border-radius: 5px;">View More</button>
+                </div>
+            </div>
+            <div  style="display: flex;">
+                <img src="./eduimg/hat.jpg" alt="" style="height: 400px; width: 400px;">
+            </div>
+        </div>
+        <br><br>
+    </section>
+    <section class="section5">
+        <div class="container" style="display: flex; justify-content: center; ">
+            <div class="card bg-transparent" style="margin-top: 270px;" id="card5">
+                <div class="card-body">
+                    <h1 class="card-title text-center">Trusted by over 5000+ Students</h1>
+                    <p class="card-text text-center" style="color: white;">We Care for Your Future Higher Studies.Join us and Book your Seats</p>
+                    <a href="#" class="btn btn-primary " style=" margin-left: 200px;">JOIN US</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section6">
+        <div class="footer" style="display: flex; justify-content: space-evenly;">
+            <div style="display: flex; flex-direction: column;">
+              <h2>Contact Us</h2>
+              <p>Email: eduhome@example.com</p>
+              <p>Phone: +1 (123) 456-7890</p>
+            </div>
+          
+            <div style="display: flex; flex-direction: column;">
+              <h2>Follow Us</h2>
+              <a href="#">Facebook</a><br>
+              <a href="#">Twitter</a><br>
+              <a href="#">Instagram</a>
+            </div>
+          
+            <div style="display: flex; flex-direction: column;">
+              <h2>Location</h2>
+              <p>23 Main Street</p>
+              <p>Plaza City, United State, </p>
+            </div>
+          </div>
+    </section>
+
+    
+</body>
+</html>
